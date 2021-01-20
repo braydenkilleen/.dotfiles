@@ -13,3 +13,5 @@ unsetopt PROMPT_SP
 ### Default programs
 export EDITOR="nvim"
 export BROWSER="firefox"
+
+###

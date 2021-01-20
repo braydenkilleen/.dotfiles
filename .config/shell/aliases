@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Use neovim if present
+[ -x "$(command -v nvim)" ] && alias vi="nvim" vim="nvim" vimdiff="nvim -d"
+
+# Colorize commands
+alias ls="ls -hN --color=auto --group-directories-first"
+alias grep="grep --color=auto"
+alias diff="diff --color=auto"
+alias ccat="highlight --out-format=ansi"
+
+# Misc command abbreviations
+alias g="git"
+alias ka="killall"
+
+# Tmux
+alias tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf"
