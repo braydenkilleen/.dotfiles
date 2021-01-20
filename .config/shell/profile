@@ -1,0 +1,15 @@
+#!/bin/zsh
+#
+# profile - runs on login and set env variables.
+#
+
+
+# Add `~/.local/bin` to PATH
+export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
+
+# preserve partial lines
+unsetopt PROMPT_SP
+
+### Default programs
+export EDITOR="nvim"
+export BROWSER="firefox"
